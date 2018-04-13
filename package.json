@@ -1,0 +1,31 @@
+{
+  "name": "intercustom",
+  "version": "1.0.0",
+  "description": "Configure Express to serve static files",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apardo04/intercustom"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "MEAN"
+  ],
+  "author": "Adrian Pardo",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/apardo04/intercustom/issues"
+  },
+  "homepage": "https://github.com/apardo04/intercustom#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "google-trends-api": "^4.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  }
+}

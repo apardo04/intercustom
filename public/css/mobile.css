@@ -1,0 +1,222 @@
+@media screen and (max-width:780px){
+    /*-------------------------menu css------------------------------*/
+    .menu {
+        position: relative;
+        display:  inline-block;
+        width: 30px;
+        height: 30px;
+    }
+    .menu span {
+        margin: 0 auto;
+        position: relative;
+        top: 12px;
+    }
+    .menu span:before, .menu span:after {
+        position: absolute;
+        content: '';
+    }
+    .menu span, .menu span:before, .menu span:after {
+        width: 30px;
+        height: 6px;
+        background-color: #93877E;
+        display: block;
+    }
+    .menu span:before {
+        margin-top: -12px;
+    }
+    .menu span:after {
+        margin-top: 12px;
+    }
+    .example5 span {
+        -webkit-transition-duration: 0s; transition-duration: 0s;
+        -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+    }
+    .example5.hover span {
+        background-color: rgba(0,0,0,0.0);
+        -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+    }
+    .example5 span:before {
+        -webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+        -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+        -webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+    }
+    .example5.hover span:before {
+        margin-top: 0;
+        -webkit-transform: rotate(45deg); transform: rotate(45deg);
+        -webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+    }
+    .example5 span:after {
+        -webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+        -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+        -webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+    }
+    .example5.hover span:after {
+        margin-top: 0;
+        -webkit-transform: rotate(-45deg); transform: rotate(-45deg);
+        -webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+    }
+    div#menu-button {
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        display: block !important;
+    }
+    ul#navigation {
+        background: none;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    ul#navigation li {
+        width: 100% !important;
+        background: #93877E;
+        border-top: 2px solid #C5B9AF;
+        border-bottom: 2px solid #6F655D;
+    }
+
+    ul#navigation li.selected a {
+        background: none !important;
+    }
+
+    ul#navigation li a {
+        width:100%;
+        color: #F1AA00;
+        text-shadow: 0 1px black;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    #navigation li a:hover {
+        background: none !important;
+    }
+    ul#navigation li:hover {
+        background-color: grey;
+    }
+    ul#navigation {
+        position: fixed;
+        top: 65px;
+        width: 100%;
+        right: -100%;
+        transition: all 500ms ease;
+    }
+    ul#navigation.show{
+        display: block !important;
+        right:0;
+        z-index: 9;
+    }
+    /*----------------------end of menu css------------*/
+    div#logo-text {
+        display: none !Important;
+    }
+
+    .area-quote {
+        display: none;
+    }
+    .area-header {
+        width: 100% !important;
+        margin: 0px !important;
+    }
+
+    div#contents {
+        width: 100%;
+    }
+    body{
+        width:100% !important;
+    }
+    .index-quote {
+        top: 80px !important;
+        left: 9px !important;
+        width: 250px !Important;
+        position: absolute !important;
+    }
+    .area-transport {
+        width: 100% !important;
+    }
+    .area {
+        width: 100% !important;
+    }
+
+    .main {
+        width: 97% !important;
+        padding-left: 2%;
+    }
+
+    #features ul {
+        width: 100%;
+    }
+
+    .blog {
+        width: 97% !important;
+        padding: 2%;
+    }
+    .box {
+      padding-top: 30px;
+      width: 323px;
+    }
+    #box-quote {
+      width: 367px;
+      padding-left: 10px;
+    }
+    #box-services {
+      width: 400px;
+    }
+    .section {
+      width: 338px;
+    }
+
+    .frame {
+        margin: 0 auto !important;
+    }
+
+    .footer-content {
+        width: 98%;
+        padding-left: 2%;
+    }
+    div#header {
+        background-position: bottom !Important;
+        height: 75px !important;
+    }
+
+    div#logo img {
+        height: 60px;
+        margin: 0 !important;
+        top: 0px !important;
+    }
+
+    div#logo {
+        margin: 0;
+    }
+}
+@media screen and (max-width:600px){
+    .transport{
+        width: 50% !important;
+    }
+}
+@media screen and (max-width:410px){
+    .index-quote{
+        /* display:none !important; */
+    }
+
+}
+@media screen and (max-width: 673px) and (min-width: 446px) {
+  .box {
+    width: 130%;
+  }
+}
+/*@media screen and (max-width: 673px) and (min-width: 446px) {
+#box-services {
+    width: 130%;
+  }
+}*/
+@media screen and (max-height: 826px) {
+	#footer {
+		display: none;
+	}
+}
+@media screen and (max-height: 855px) {
+	#quote-footer {
+		display: none !important;
+	}
+}
+.stopScroll{
+  overflow:hidden;
+}
